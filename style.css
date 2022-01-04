@@ -1,0 +1,99 @@
+
+/* estilo geral da página */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive; 
+}
+
+/* Estilizando o body */
+body{
+    width: 100%; /* Define a largura do body */
+    height: 100vh; /* Define a altura do body */
+
+    background-color: #1a1a1a;
+}
+
+/* Cabecalho */
+header{
+    width: 100%; /* Define a largura do header */
+    height: 70px; /* Define a altura do header */
+
+    background-color: #101010; /* Define o background do header */
+
+    box-shadow: 0px 5px 20px #000; /* Estilo do body */
+
+    padding: 10px;
+
+    display: flex; /* Faz com que os itens fiquem um ao lado do outro */
+
+    align-items: center; /* Mantem os itens alinhados e centralizados um em relação ao outro */
+
+    flex-wrap: wrap; /* Serve para quebrar os itens de acordo com o laytout da página - só a titulo de conhecimento, pois para essa aplicação não será necessário utilizar pois só possuem 3 itens no menu e esse já se comportam bem nas menores telas. */
+
+    justify-content: space-between; /* Distribui os itens, fazendo a logo ficar na esquerda e o menu na direita */
+}
+
+h1{
+    color: #fff;/* Cor da fonte das letras do H1 */
+    text-align: center; /* alinhamento do texto ao centro */
+
+    margin: 20px; /* espaçamento 20px para todos os lados */
+}
+
+img{
+    width: 100%; /* largura das imagens */
+    border-radius: 5px; /* borda das imagens */
+}
+
+/* Estilizando a Logo */
+.logo{
+    width: 45px; /* largura do elemento da logomarca */
+    height: 45px;/* altura do elemento da logomarca */
+
+    border-radius: 10px;/* borda para o elemento da logomarca */
+
+    background-color: #ccc;/* Background para o elemento da logomarca */
+}
+
+.menu{
+    list-style: none; /* Remove as bolinhas da lista */
+
+    flex-wrap: wrap; /* Serve para quebrar os itens de acordo com o laytout da página - só a titulo de conhecimento, pois para essa aplicação não será necessário utilizar pois só possuem 3 itens no menu e esse já se comportam bem nas menores telas. */
+
+    display: flex; /* Alinha os elementos da lista um ao lado do outro */
+}
+
+.menu li a {
+    color: #fff; /* Define a cor do link da lista */
+
+    display: block; /* Transforma o item de linha em caixa */
+    text-decoration: none; /* Retira o sublinhado do link */
+
+    margin-left: 10px; /* Atribui uma margin de 10px na lateral esquerda de cada item da lista */
+}
+
+.menu li a:hover {
+    color: #fff; /* Define a cor do link da lista */
+
+    display: block; /* Transforma o item de linha em caixa */
+    text-decoration: none; /* Retira o sublinhado do link */
+
+    margin-left: 10px; /* Atribui uma margin de 10px na lateral esquerda de cada item da lista */
+}
+
+.container{
+    max-width: 1200px;/* Dimensionamento máximo da tela */
+    margin: 0 auto; /* Mantém o elemento centralizado na tela */
+
+    display: flex; /* Coloca os elementos lado a lado */
+
+    flex-wrap: wrap; /* Quebra os elementos de acordo com o tamanho da tela */
+}
+
+.container div{
+    flex: 1 1 350px; /* configuração para dimensionamento mínimo para quebra dos elementos */
+    margin: 5px; /* distância entre os elementos */
+}
+
